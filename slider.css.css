@@ -1,0 +1,71 @@
+/* =========================== Slider ============================ */
+/* =========================== Slider 1 For Large screen ============================ */
+.swiper {
+    width: 100%;
+    height: 80vh;
+    padding-bottom: 52%;
+    padding-top: 7%;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    background: #000;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006); */
+  }
+  
+  .swiper-slide img {
+  
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .swiper__1{
+    display: block;
+  }
+  
+  /* =========================== Slider 2 For Small Screen  ============================ */
+  
+  .swiper__2 .swiper {
+    width: 10%;
+    height: 80vh;
+    margin-bottom: 2%;
+  }
+  
+  .swiper__2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006); */
+  }
+  
+  .swiper__2 .swiper-slide img {
+  
+    width: 100%;
+    height: 80vh;
+  }
+  .swiper__2{
+    display: none;
+  }
+  
+  /* ======================== Slider Responsive ==================== */
+  @media screen and (max-width: 750px) {
+    .swiper__2{
+      display: block;
+      padding-bottom: 120%;
+    }
+    .swiper__1{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .swiper__2{
+      padding-bottom: 260%;
+    }
+  }
+  
+  /* ============================= Slider End ==================================== */
